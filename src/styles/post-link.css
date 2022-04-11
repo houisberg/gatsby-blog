@@ -1,7 +1,7 @@
 /* src/styles/post-link.css */
 .post-link {
   display: grid;
-  margin: 25px 0px;
+  margin: 0 25px 25px 0;
 }
   
 .post-link-body {
@@ -16,6 +16,7 @@
 
 .post-link-text {
   padding: 1rem 0;
+  color: #005b99;
 }
 
 .post-link-date {
