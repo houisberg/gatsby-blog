@@ -11,7 +11,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
-    `gatsby-remark-prismjs`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
