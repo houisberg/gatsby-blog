@@ -3,7 +3,7 @@ import React from "react"
 import "../styles/post-link.css"
 
 export default function PostLink({ post }) {
-    const { title, updatedAt } = post;
+    const { title, createdAt } = post;
     const description = post.description.description;
     const pageLink = `/post/${post.slug}/`
 
@@ -13,7 +13,7 @@ export default function PostLink({ post }) {
                 <div className="post-link-text">
                     <h2>{title}</h2>
                     <p className="post-link-body">{description}</p>
-                    <p className="post-link-date">{updatedAt}</p>
+                    <p className="post-link-date">{createdAt}</p>
                 </div>
             </div>
         </Link>

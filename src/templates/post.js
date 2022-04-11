@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 import "../styles/post.css"
 
 export default function Post({ pageContext }) {
-    const { title, updatedAt } = pageContext.post;
+    const { title, createdAt } = pageContext.post;
     const description = pageContext.post.description.description
     const body = pageContext.post.body.childMarkdownRemark.html;
     const previous = pageContext.previous
@@ -16,7 +16,7 @@ export default function Post({ pageContext }) {
             <Seo title={title} description={description} />
             <div className="post-header">
                 <h1>{title}</h1>
-                <p className="post-date">{updatedAt}</p>
+                <p className="post-date">{createdAt}</p>
             </div>
             <div dangerouslySetInnerHTML={{ __html: body }} className="post-body" />
             <hr></hr>

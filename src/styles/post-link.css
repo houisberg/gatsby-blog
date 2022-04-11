@@ -1,7 +1,6 @@
-/* src/styles/post-link.css */
 .post-link {
   display: grid;
-  margin: 0 25px 25px 0;
+  margin-bottom: 1rem;
 }
   
 .post-link-body {
@@ -15,7 +14,6 @@
 }
 
 .post-link-text {
-  padding: 1rem 0;
   color: #005b99;
 }
 
@@ -40,6 +38,9 @@
   .post-link-image {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+  }
+  .post-link-text {
+    padding: 0.5rem;
   }
 }
 
