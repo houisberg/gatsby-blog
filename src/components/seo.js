@@ -29,8 +29,28 @@ const Seo = ({ title, description }) => {
                     content: `Newport 1963`,
                 },
                 {
+                    property: `og:url`,
+                    content: `https://newport1963.netlify.app`
+                },
+                {
+                    property: `og:image`,
+                    content: `../../static/favicon.svg`
+                },
+                {
                     property: `og:locale`,
                     content: `ja_JP`,
+                },
+                {
+                    name: `twitter:card`,
+                    content: `../../static/favicon.svg`
+                },
+                {
+                    name: `twitter:site:id`,
+                    content: `@Jathinus`
+                },
+                {
+                    name: `twitter:creator`,
+                    content: `@Jathinus`
                 },
             ]}
         />
