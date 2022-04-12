@@ -6,7 +6,8 @@ module.exports = {
   siteMetadata: {
     title: "Newport 1963",
     description: "備忘録のようなもの",
-    author: "jathinus"
+    author: "jathinus",
+    siteUrl: "https://newport1963.netlify.app/"
   },
   plugins: [
     `gatsby-plugin-image`,
