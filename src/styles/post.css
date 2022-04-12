@@ -18,6 +18,11 @@
 .post-body {
   margin: 30px auto;
   max-width: 700px;
+  white-space: pre-wrap;
+}
+
+.post-body > p {
+  margin: auto;
 }
 
 .post-body img{
