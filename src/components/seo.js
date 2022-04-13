@@ -34,7 +34,7 @@ const Seo = ({ title, description }) => {
                 },
                 {
                     property: `og:image`,
-                    content: `https://newport1963.com/favicon.svg`
+                    content: `https://newport1963.com/og_icon.png`
                 },
                 {
                     property: `og:locale`,
