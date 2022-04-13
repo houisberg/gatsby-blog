@@ -30,11 +30,11 @@ const Seo = ({ title, description }) => {
                 },
                 {
                     property: `og:url`,
-                    content: `https://newport1963.netlify.app`
+                    content: `https://newport1963.com`
                 },
                 {
                     property: `og:image`,
-                    content: `../../static/favicon.svg`
+                    content: `https://newport1963.com/favicon.svg`
                 },
                 {
                     property: `og:locale`,
@@ -42,7 +42,11 @@ const Seo = ({ title, description }) => {
                 },
                 {
                     name: `twitter:card`,
-                    content: `../../static/favicon.svg`
+                    content: `summary`
+                },
+                {
+                    name: `twitter:image`,
+                    content: `https://newport1963.com/favicon.svg`
                 },
                 {
                     name: `twitter:site:id`,
