@@ -10,6 +10,15 @@ module.exports = {
     siteUrl: "https://newport1963.com"
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [process.env.GOOGLE_TRACKING_ID],
+        pluginConfig: {
+          head: true
+        }
+      }
+    },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     {
@@ -37,14 +46,5 @@ module.exports = {
         icon: `static/favicon.svg`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [process.env.GOOGLE_TRACKING_ID],
-        pluginConfig: {
-          head: true  // headタグに記載されるようにコンフィグを設定します。
-        }
-      }
-    }
   ],
 }
