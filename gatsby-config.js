@@ -36,6 +36,15 @@ module.exports = {
       options: {
         icon: `static/favicon.svg`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [process.env.GOOGLE_TRACKING_ID],
+        pluginConfig: {
+          head: true  // headタグに記載されるようにコンフィグを設定します。
+        }
+      }
     }
   ],
 }
