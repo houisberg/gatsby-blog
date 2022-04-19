@@ -4,7 +4,7 @@ import "../styles/post-link.css"
 
 export default function PostLink({ post }) {
     const { title, createdAt } = post;
-    const description = post.description.description;
+    const description = post.description?.description ?? '';
     const pageLink = `/post/${post.slug}/`
 
     return (
